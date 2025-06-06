@@ -19,7 +19,7 @@ FROM ghcr.io/streamingfast/nitro:${CHAIN_DOCKER_VERSION} as chain
 
 ####
 
-FROM ubuntu:noble-20241009
+FROM ubuntu:24.10
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
        apt-get -y install -y \
